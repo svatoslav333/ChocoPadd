@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+
+    html {
+  scroll-behavior: smooth; 
+}
+.navbar {
+    background-color:#FFF5EE;
+    padding: 20px;
+  
+
+    
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+   
+}
+
+.menu a:hover {
+    background-color: #FFE4E1;
+    border-radius: 4px;
+  
+}
+header {
+    position: fixed; /* Фиксирует меню */
+    top: 0; /* Устанавливает меню в верхней части экрана */
+    left: 0; /* Устанавливает меню слева */
+    width: 100%; /* Заставляет меню занимать всю ширину экрана */
+    background-color: #333; /* Цвет фона */
+    z-index: 1000; /* Устанавливает меню над другими элементами */
+}
+
+.imag-container {
+    position: relative;
+    display: inline-block;
+    width: 100vw; /* Полная ширина экрана */
+  height: 100vh; /* Полная высота экрана */
+  overflow: hidden; /* Убирает всё, что выходит за границы */
+ 
+}
+.imag-container img {
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+    
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    background-color: white;
+    padding: 70px 50px;
+    border-radius: 15px;
+}
+.title {
+     background-color: #5a3622; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    bottom: 4px;
+}
+.title::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #5a3622; 
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.form-container {
+    top: 120%;
+    left: 24%;
+    position: absolute;
+     background: #fff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 800px; /* Ширина формы */
+    width: 100%; /* Адаптивная ширина */
+   
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    
+}
+
+.registration-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+     
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+}
+
+.registration-form input:focus {
+    border-color: #888;
+    outline: none;
+     
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5c9cf0;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.registration-form button:hover {
+    background-color: #4886d3;
+}
+
+footer {
+     background-color: #4a3520;
+      color: #fff;
+    padding: 20px 0;
+    margin-top: 700px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.contact, .hour {
+    flex: 1;
+    margin: 10px;
+    background-color: #5c4530;
+    padding: 15px;
+    border-radius: 8px;
+}
+.contact a, .social-icon {
+    color: #ffcc00;
+    text-decoration: none;
+}
+.contact a:hover, .social-icon:hover {
+    text-decoration: underline;
+}
+.social {
+    margin-top: 10px;
+}
+.hour ul {
+    list-style: none;
+    padding: 0;
+}
+.hour li {
+    margin-bottom: 5px;
+}
+.privacy {
+    text-align: center;
+     padding: 10px;
+    background-color: #42251e;
+    text-decoration: none;
+}
+.privacy p {
+    margin: 0;
+    font-size: 0.9em;
+     text-decoration: none;
+     list-style: none;
+}
+.politic {
+    text-decoration: none;
+    color: #ffcc00;
+}
+.politic:hover {
+      text-decoration: underline;
+}
+.hour h2 {
+    text-align: left;
+    color: white;
+}
+.contact h1 {
+    text-align: left;
+    color: white;
+}

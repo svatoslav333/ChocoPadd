@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    html {
+  scroll-behavior: smooth; 
+}
+
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+   
+}
+.navbar {
+    background-color:#FFF5EE;
+    padding: 20px;
+  
+
+    
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+   
+}
+
+.menu a:hover {
+    background-color: #FFE4E1;
+    border-radius: 4px;
+  
+}
+.logo {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    color: #F4A460;
+    font-weight: bold;
+    font-size: 24px;
+    list-style: none;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+
+}
+header {
+    position: fixed; /* Фиксирует меню */
+    top: 0; /* Устанавливает меню в верхней части экрана */
+    left: 0; /* Устанавливает меню слева */
+    width: 100%; /* Заставляет меню занимать всю ширину экрана */
+    background-color: #333; /* Цвет фона */
+    z-index: 1000; /* Устанавливает меню над другими элементами */
+}
+.title {
+     background-color: #5a3622; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    bottom: 4px;
+}
+.title::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #5a3622; /* Цвет треугольника */
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.text-center {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+}
+.title2 {
+    background-color: #8B4513 ;
+    background-color: ;color: #FFFAF0;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: sans-serif;
+}
+.title2::after { 
+content:"";
+width: 0;
+height: 0;
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-top: 20px solid #8B4513;
+position: absolute;
+ bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .scroll-container {
+  display: flex;         /* Выстраивает изображения в строку */
+  overflow-x: auto;      /* Добавляет горизонтальный скролл */
+  white-space: nowrap;   /* Запрещает перенос элементов на следующую строку */
+  gap: 10px;             /* Расстояние между изображениями */
+  
+}
+
+.scroll-container img {
+  max-height: 200px;     /* Ограничивает высоту изображений */
+  object-fit: cover;     /* Масштабирует изображение, чтобы оно полностью заполнило рамку */
+margin-top: 40px;
+}
+.text-style {
+    position: absolute;
+    top: 1850px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+}
+.textuns {
+    position: absolute;
+    top: 1900px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.text-style2 {
+    position: absolute;
+    top: 2130px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.textuns2 {
+    position: absolute;
+    top: 2190px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.text-style3 {
+ position: absolute;
+    top: 2380px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.textuns3 {
+    position: absolute;
+    top: 2450px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.text-style4 {
+    position: absolute;
+    top: 2610px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.textuns4 {
+     position: absolute;
+    top: 2670px;
+    padding: 50px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+
+footer {
+     background-color: #4a3520;
+      color: #fff;
+    padding: 20px 0;
+    margin-top: 1100px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.contact, .hour {
+    flex: 1;
+    margin: 10px;
+    background-color: #5c4530;
+    padding: 15px;
+    border-radius: 8px;
+}
+.contact a, .social-icon {
+    color: #ffcc00;
+    text-decoration: none;
+}
+.contact a:hover, .social-icon:hover {
+    text-decoration: underline;
+}
+.social {
+    margin-top: 10px;
+}
+.hour ul {
+    list-style: none;
+    padding: 0;
+}
+.hour li {
+    margin-bottom: 5px;
+}
+.privacy {
+    text-align: center;
+     padding: 10px;
+    background-color: #42251e;
+    text-decoration: none;
+}
+.privacy p {
+    margin: 0;
+    font-size: 0.9em;
+     text-decoration: none;
+     list-style: none;
+}
+.politic {
+    text-decoration: none;
+    color: #ffcc00;
+}
+.politic:hover {
+      text-decoration: underline;
+}
